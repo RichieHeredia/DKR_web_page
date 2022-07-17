@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "chrome-flight-324323",
+  "private_key_id": "873f322dccdded3c064e70705060e2d8746989de",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCrh36uQyVhI0m2\nXLlewP/KaLpeGDKbaZpfP7J52Iqbg6zDGT8u32p+c50NcNzXwcjWYBce5Bf6VPyc\nw0ZJo6nJ3Oje61TnQR977wukVWYp3KmUTvbi8SFHHgPO4sgp74DzdopX6OLggUS+\ngqZ9r0xRKhLRVMzMw4d5DTv2ZpgyGn86im01w6QBXaleBDB4ij0hQnxKEicLtQA0\n4ANekQb/DNBjLA7NhnqmCMBi0mvWEZVOus3frfSRwXGVALFFxEr6VFvtCg+dRCci\nIEkNcA3bVqs3K8tx4AF6FpprTEkFDfZS7CI9BRvLA6AtVthoa3I6Y0099YhqobCy\nuzWTD5wpAgMBAAECggEAFVY4NaSgGnZ5haAApg8DcpH29tvzNZ5cB9OkV6BOU5x8\nSdOS5rl/ZYXrqB+dNRCDs1kGHz9X1Tmrp7Npw6DCbtwWMp6a895HtJKug81ktTnf\n9VUiRGYi0dYjuqE+rWq/w2lAOcG8MRmba8hUPgenimQdraDrDeCXskDpb9PgxECP\n5qR75RhpNQ6IYUkZUf5JtXQRBRPVGnch3TTBA5HhJLcJQaIUx9CG5MRLKIG6c9GZ\nou3hdQWyFSVNsbJ4PAqE+nsw9+/d8Po5DcQl3aXa4xSR7OpA/GX5TjVWThf+l5j2\n+bfTCK+R+U7tt35JZrNhDapNHStjrGcuxWZ00/iXAQKBgQDTsJ0wl1XurFvPEzPU\nJNfO9T0PZ3xh3PcQBnbIP3lsMvF6mseMkawROXvAP1bLCwvD9BufQ2L2tW8nC21n\nnerMrrr36BIq8YdcH63hchONYudSL1EkJP2ZFRcSVM3BVJArwolpYpD6hUd9BVob\n9Ia2XscewN5k7PwZ+3PTv90yqQKBgQDPbuCOkZdQmCFP4FRBUWi4/wlX93LeYalN\n6iN6t3/GfaBpUU3g0CwxWIql0OHuMsxORY7hRP9VCeHMFHyH7x//uF0jk+S/3UL/\nd7JwF4j7cbVV7BzCNRcsTubxb+k0tq8HJCvmvV8r9fvaGd0qFCuV1gZoNQWW8ros\n5SqQM2KNgQKBgQCbZI4+2Rhvd359Z28oT1NLzKHh6OlZPUbvMI+JN27+ifbRNUU+\nXsCcdEHvQY+IxLcCRPLx2hmPWGgblTveUAHH9ouw515Ov7XJXkfZsk+//dYocity\nCOVPtjeVcUMIo/ag6NDN11jtTWDI2WDoHHu266PnY1TdaUk2GWtRCQpq4QKBgEsG\nt4HZdvlXjPTvFoppf48p7585iPqWKD5eKWcBZ93LInH1Tk25/cH7XGqNGqqlBPBq\niDtCUXfYkyrVXhVskA5WCJoNq/cZeFoeWRPh71HC1uu08tHrke4cu7sn1xmR2cyj\ncJ2McRfdaLKCGFRX50vSlY6rXtIyCNSkLrjpXQQBAoGBAMTCBnd/Ghe/vecRpBTN\nehF4VJHUK4Tqfxbb+ZKx2WOMmyPZpYDDRYdXZLQmEnWbV/8+kiSPDGeDzjmLfwoJ\nPwtY25pw6X9xZ9Iq/vAApMlnqUD3e3Ho0g9EtaY9bSDDrBuDvB4JQmx1r3Ssz4+4\nWdDHaLrXVPnBUMYFVy8YN8Iw\n-----END PRIVATE KEY-----\n",
+  "client_email": "python-knr@chrome-flight-324323.iam.gserviceaccount.com",
+  "client_id": "106831758809928437560",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/python-knr%40chrome-flight-324323.iam.gserviceaccount.com"
+}

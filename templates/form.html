@@ -1,0 +1,79 @@
+{% macro render(field) %}
+<div class="row cont-row">
+    <div  class="col-sm-3">
+      <label for="{{ field.name }}">{{ field.label.text }}</label><span>:</span>
+    </div>
+
+    <div class="col-sm-8">
+      {{field(class_ = 'form-input',  **kwargs)|safe}}
+      <ul>
+        {% for error in field.errors %}
+          <li style="color:red;"> {{ error }} </li>
+        {% endfor %}
+      </ul>
+    </div>
+</div>
+{% endmacro %}
+
+
+
+<!--  ************************* Form two starts here ************************** -->
+
+{% macro render_field(field) %}
+<div class="form-group">
+    <label for="{{ field.name }}">{{ field.label.text }}</label>
+    {{field(class_ = 'form-input',  **kwargs)|safe}}
+    <ul>
+      {% for error in field.errors %}
+        <li style="color:red;"> {{ error }} </li>
+      {% endfor %}
+    </ul>
+</div>
+{% endmacro %}
+
+{% macro render_social_field(field) %}
+    {{field(class_ = 'form-input',  **kwargs)|safe}}
+    <ul>
+      {% for error in field.errors %}
+        <li style="color:red;"> {{ error }} </li>
+      {% endfor %}
+    </ul>
+{% endmacro %}
+
+{% macro render_field_select(field) %}
+<div class="form-group">
+    <label for="{{ field.name }}">{{ field.label.text }}</label>
+    <div class="select-list">
+      {{field(class_ = 'list-item', **kwargs)|safe}}
+      <ul>
+        {% for error in field.errors %}
+          <li style="color:red;"> {{ error }} </li>
+        {% endfor %}
+      </ul>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro render_radio_field(field) %}
+<div >
+    <label for="{{ field.name }}">{{ field.label.text }}</label>
+    <div class="form-flex">
+    {% for subfield in field %}
+        {{subfield(id_ ="{{subfield.label.text}}",**kwargs)|safe }}
+        <label for=" {{subfield.label.text}} "> {{subfield.label.text}} </label>
+    {% endfor %}
+    </div>
+</div>
+{% endmacro %}
+
+{% macro render_ckeck_field(field) %}
+<div class="form-group">
+    {{field(class_ = 'submit',  **kwargs)|safe}}
+    Acepta <a href="https://minciencias.gov.co/sites/default/files/manual_politicas_de_seguridad_de_la_informacion_v01_1.pdf"> terminos y condiciones ?</a>
+    <ul>
+      {% for error in field.errors %}
+        <li style="color:red;"> {{ error }} </li>
+      {% endfor %}
+    </ul>
+</div>
+{% endmacro %}

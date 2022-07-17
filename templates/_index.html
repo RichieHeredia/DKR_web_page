@@ -1,0 +1,99 @@
+{% from "form.html" import render_file_field, render_field,render_ckeck_field,render_radio_field,render_field_select,render_social_field %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form K&R</title>
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="static/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="static/vendor/jquery-ui/jquery-ui.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" class="signup-form" >
+                      {{ form.csrf_token }}
+                        <div class="form-row">
+                            {{ render_field(form.name) }}
+                            {{ render_field(form.apellidos) }}
+                        </div>
+                        <div>
+                          {{ render_radio_field(form.radio)}}
+                        </div>
+                        <div class="form-row">
+                          {{ render_field(form.kind_id, placeholder = 'CC') }}
+                          {{ render_field(form.cedula) }}
+                        </div>
+                        <div class="form-row">
+                          {{ render_field(form.birthdate, placeholder="MM-DD-YYYY") }}
+                          {{ render_field(form.phone) }}
+                        </div>
+                        <div class="form-text">
+                            <a href="#" class="add-info-link"><i class="zmdi zmdi-chevron-right"></i>Información complementaria</a>
+                        </div>
+                          {{ render_field(form.email) }}
+                        <div class="form-row">
+                          {{ render_field_select(form.pais)}}
+                          {{ render_field_select(form.City)}}
+                        </div>
+                        {{ render_field(form.Adress_city) }}
+                        <div class="form-text">
+                            <a href="#" class="add-info-link"><i class="zmdi zmdi-chevron-right"></i>Información del la cuenta</a>
+                        </div>
+                          {{ render_field(form.placename) }}
+                          <div class="form-row">
+                            {{ render_field_select(form.Membership_kind)}}
+                            {{ render_field(form.Date_start, placeholder="MM-DD-YYYY") }}
+                          </div>
+
+                          <div class="form-row">
+                            {{ render_field_select(form.Bank_sel)}}
+                            {{ render_field_select(form.Kind_place)}}
+                          </div>
+                          <div class="form-row">
+                            {{ render_field_select(form.member_time)}}
+                            {{ render_field_select(form.matriculas)}}
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group">
+                                <i class="zmdi zmdi-facebook small"></i>
+                                {{render_social_field (form.facebook, placeholder="Facebook")}}
+                              </div>
+                              <div class="form-group">
+                                  <i class="zmdi zmdi-instagram small"></i>
+                                  {{render_social_field (form.insta, placeholder="Instagram")}}
+                              </div>
+                          </div>
+
+                        <div class="form-row">
+                          {{ render_field(form.password) }}
+                          {{ render_field(form.password_2) }}
+
+                        </div>
+                        {{ render_ckeck_field(form.condiciones) }}
+
+
+                      <div class="form-group">
+                          <input type="submit" name="submit" id="submit" class="form-submit" value="Submit"></input>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- JS -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="static/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="static/vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="static/js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

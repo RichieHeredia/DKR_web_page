@@ -1,0 +1,186 @@
+{% from "form.html" import render_field %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>KnR web_page_v1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="static/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+		<!-- DATE-PICKER -->
+		<link rel="stylesheet" href="static/vendor/date-picker/css/datepicker.min.css">
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="static/css/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+            <form id="form" action="/Clientes" method="POST" role='Form'>
+							{{ form.csrf_token }}
+            	<div id="wizard">
+            		<!-- SECTION 1 -->
+	                <h4></h4>
+	                <section>
+	                	<div class="form-header">
+	                		<div class="avartar">
+								<a href="#">
+									<img src="static/images/avartar.png" alt="">
+								</a>
+								<div class="avartar-picker">
+									<input type="file" name="file-1[]" id="file-1" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+									<label for="file-1">
+										<i class="zmdi zmdi-camera"></i>
+										<span>Choose Picture</span>
+									</label>
+								</div>
+							</div>
+							{{ render_field(form.username,
+															form.placename,
+															form.invented_name,
+															plh=form.username.label.text,
+															plh_1=form.placename.label.text,
+															plh_2=form.invented_name.label.text) }}
+
+	                	</div>
+          	<div class="form-holder">
+							<input type="text" placeholder="Email" class="form-control">
+						</div>
+						<div class="form-holder">
+							<input type="password" placeholder="Create a password" class="form-control">
+						</div>
+	                </section>
+
+
+									<!-- SECTION 1.1 -->
+									<h4></h4>
+	                <section>
+	                	<div class="form-header">
+	                		<div class="avartar">
+								<a href="#">
+									<img src="static/images/avartar.png" alt="">
+								</a>
+								<div class="avartar-picker">
+									<div class="checkbox-tick">
+										<label class="male">
+											<input type="radio" name="gender" value="male" checked> Male<br>
+											<span class="checkmark"></span>
+										</label>
+										<label class="female">
+											<input type="radio" name="gender" value="female"> Female<br>
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="form-holder">
+									<input type="text" placeholder="Team Name" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" class="form-control datepicker-here" data-language='en' data-date-format="dd - mm - yyyy" id="dp1" placeholder="Date of Birth">
+								</div>
+								<div class="form-holder">
+									<input type="text" placeholder="Team Name" class="form-control">
+								</div>
+							</div>
+	                	</div>
+	                	<div class="form-holder">
+							<input type="text" placeholder="Email" class="form-control">
+						</div>
+						<div class="form-holder">
+							<input type="password" placeholder="Create a password" class="form-control">
+						</div>
+	                </section>
+
+					<!-- SECTION 2 -->
+	                <h4></h4>
+	                <section>
+                		<div class="grid">
+                			<div class="row">
+                				<a href="#" class="grid-item" style="background-image: url({{ url_for('static', filename='/images/programming-bg.jpg') }});">
+	                				<div class="inner">
+	                					<img src="static/images/programming.png" alt="">
+	                					<span>Programming</span>
+	                				</div>
+	                			</a>
+	                			<a href="#" class="grid-item" style="background-image: url({{ url_for('static', filename='/images/research-bg.jpg') }});">
+	                				<div class="inner">
+	                					<img src="static/images/research.png" alt="">
+	                					<span>Research</span>
+	                				</div>
+
+	                			</a>
+	                			<a href="#" class="grid-item" style="background-image: url({{ url_for('static', filename='/images/teacher-bg.jpg') }});">
+	                				<div class="inner">
+	                					<img src="static/images/teacher.png" alt="">
+	                					<span>Teacher</span>
+	                				</div>
+
+	                			</a>
+                			</div>
+                			<div class="row">
+                				<a href="#" class="grid-item" style="background-image: url({{ url_for('static', filename= 'images/tour-guide-bg.jpg') }});">
+	                				<div class="inner">
+	                					<img src="static/images/tour-guide.png" alt="">
+	                					<span>Tour Guide</span>
+	                				</div>
+	                			</a>
+	                			<a href="#" class="grid-item" style="background-image: url({{ url_for('static', filename='images/business-bg.jpg') }});">
+	                				<div class="inner">
+	                					<img src="static/images/business.png" alt="">
+	                					<span>Business</span>
+	                				</div>
+	                			</a>
+	                			<a href="#" class="grid-item" style="background-image: url({{ url_for('static', filename='images/artist-bg.jpg') }});">
+	                				<div class="inner">
+	                					<img src="static/images/artist.png" alt="">
+	                					<span>Artist</span>
+	                				</div>
+	                			</a>
+                			</div>
+                		</div>
+	                </section>
+
+	                <!-- SECTION 3 -->
+	                <h4></h4>
+	                <section>
+
+            <div class="form-row">
+            	<div class="form-holder">
+								<input type="text" placeholder="Street Name" class="form-control">
+							</div>
+							<div class="form-holder">
+								<input type="text" placeholder="Street Number" class="form-control">
+							</div>
+            </div>
+            <div class="form-row">
+            	<div class="form-holder">
+								<input type="text" placeholder="City" class="form-control">
+							</div>
+							<div class="form-holder">
+								<input type="text" placeholder="Country" class="form-control">
+							</div>
+							<div class='text-center'>
+								<button type='submit' class='btn btn-primary btn-save form-control'>Guardar</button>
+							</div>
+            </div>
+	                </section>
+            	</div>
+            </form>
+		</div>
+
+
+		<script src="static/js/jquery-3.3.1.min.js"></script>
+
+		<!-- JQUERY STEP -->
+		<script src="static/js/jquery.steps.js"></script>
+
+		<!-- DATE-PICKER -->
+		<script src="static/vendor/date-picker/js/datepicker.js"></script>
+		<script src="static/vendor/date-picker/js/datepicker.en.js"></script>
+
+		<script src="static/js/main.js"></script>
+<!-- Template created and distributed by Colorlib -->
+</body>
+</html>
