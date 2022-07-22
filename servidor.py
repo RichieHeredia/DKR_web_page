@@ -102,7 +102,8 @@ class MyForm(FlaskForm):
                                                      ('2', 'Baile'), 
                                                      ('3', 'Boxeo'),
                                                      ('4', 'Karate'),
-                                                     ('5', 'Ingles')] )    
+                                                     ('5', 'Ingles'), 
+                                                     ('6', 'Otro')] )    
     Date_start = DateField('Fecha Inicio', validators=[InputRequired('A birth date is required!')])    
     Bank_sel = SelectField('Banco', 
                             choices = [('NEQUI', 'Nequi') , 
@@ -164,7 +165,7 @@ def Contact():
     form_cli = Info_form()
     if form_cli.validate_on_submit():
         data =  form_cli.data  
-        send_report(data['name'], str(data['phone']) , data['message'], data['email'], )         
+        send_report(data['name'], str(data['phone']) , data['message'], data['email'] )         
         return render_template('index_.html')
     return render_template('contact_us.html', form = form_cli)
 
@@ -187,11 +188,13 @@ def form():
 
 
 
-def send_report(name, phone:str, message, email_to):
+def send_report(name, phone, message, email_to):
     
+
     with open('classy2.txt', 'rb') as file:
         text = file.read()
-    
+        
+    print(name, phone, message, email_to)
     new_text = text.decode().replace('USUARIO_REPORTE',name)
     new_text = new_text.replace('TELEFONO_REPORTE', phone).replace('MENSAJE_REPORTE', message)
     
