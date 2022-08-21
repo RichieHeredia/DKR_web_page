@@ -95,7 +95,7 @@
 													<table width="100%" border="0" cellspacing="0" cellpadding="0">
 														<tr>
 															<td class="img m-center" style="font-size:0pt; line-height:0pt; text-align:left;">
-																<img src="cid:image1" width="106" height="106" border="0" alt="" />
+																<img src="{{ image1.src }}" width="106" height="106" border="0" alt="" />
 															</td>
 														</tr>
 													</table>
@@ -124,7 +124,7 @@
 													<table width="100%" border="0" cellspacing="0" cellpadding="0">
 														<tr>
 															<td class="fluid-img" style="font-size:0pt; line-height:0pt; text-align:left;">
-																<img src="cid:image11" width="300" height="450" border="0" alt="" />
+																<img src="{{ image11.src }}" width="300" height="450" border="0" alt="" />
 															</td>
 														</tr>
 													</table>
@@ -139,7 +139,7 @@
 														</tr>
 														<tr>
 															<td class="text pb20" style="color:#777777; font-family:'Lato', Arial,sans-serif; font-size:16px; line-height:30px; text-align:left; padding-bottom:20px;">
-																Daniel Baron Estos fueron los datos suministrados:
+																USUARIO_REPORTE Estos fueron los datos suministrados:
 															</td>
 														</tr>
 														<tr>
@@ -151,9 +151,9 @@
 																				<tr>
 																					<td valign="top" class="content-spacing" width="32" style="font-size:0pt; line-height:0pt; text-align:left;"></td>
 																					<td valign="top" class="img" width="28" style="font-size:0pt; line-height:0pt; text-align:left;">
-																						<img src="cid:ico_phone" width="13" height="22" border="0" alt="" /></td>
+																						<img src="{{ ico_phone.src }}" width="13" height="22" border="0" alt="" /></td>
 																					<td valign="top" class="text" style="color:#777777; font-family:'Lato', Arial,sans-serif; font-size:16px; line-height:30px; text-align:left;"><a href="#" target="_blank" class="link-u" style="color:#777777; text-decoration:underline;"><span style="color:#777777; text-decoration:underline;">
-																						Telefono <span>:</span> 3175351526
+																						Telefono <span>:</span> TELEFONO_REPORTE
 																					</span></a></td>
 																				</tr>
 																			</table>
@@ -165,9 +165,9 @@
 																				<tr>
 																					<td valign="top" class="content-spacing" width="32" style="font-size:0pt; line-height:0pt; text-align:left;"></td>
 																					<td valign="top" class="img" width="28" style="font-size:0pt; line-height:0pt; text-align:left;">
-																						<img src="cid:ico_phone" width="13" height="22" border="0" alt="" /></td>
+																						<img src="{{ ico_phone.src }}" width="13" height="22" border="0" alt="" /></td>
 																					<td valign="top" class="text" style="color:#777777; font-family:'Lato', Arial,sans-serif; font-size:16px; line-height:30px; text-align:left;"><a href="#" target="_blank" class="link-u" style="color:#777777; text-decoration:underline;"><span style="color:#777777; text-decoration:underline;">
-																						Mensaje <span>:</span> Hola que hace
+																						Mensaje <span>:</span> MENSAJE_REPORTE
 																					</span></a></td>
 																				</tr>
 																			</table>
@@ -218,7 +218,7 @@
 																			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 																				<tr>
 																					<td class="img-center pb25" style="font-size:0pt; line-height:0pt; text-align:center; padding-bottom:25px;">
-																						<img src="cid:ico1" width="136" height="136" border="0" alt="" />
+																						<img src="{{ ico1.src }}" width="136" height="136" border="0" alt="" />
 																					</td>
 																				</tr>
 																				<tr>
@@ -244,7 +244,7 @@
 																			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 																				<tr>
 																					<td class="img-center pb25" style="font-size:0pt; line-height:0pt; text-align:center; padding-bottom:25px;">
-																						<img src="cid:ico2" width="136" height="136" border="0" alt="" />
+																						<img src="{{ ico2.src }}" width="136" height="136" border="0" alt="" />
 																					</td>
 																				</tr>
 																				<tr>
@@ -271,7 +271,7 @@
 																			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 																				<tr>
 																					<td class="img-center pb25" style="font-size:0pt; line-height:0pt; text-align:center; padding-bottom:25px;">
-																						<img src="cid:ico3" width="136" height="136" border="0" alt="" />
+																						<img src="{{ ico3.src }}" width="136" height="136" border="0" alt="" />
 																					</td>
 																				</tr>
 																				<tr>
@@ -328,7 +328,7 @@
 																<table class="center" border="0" cellspacing="0" cellpadding="0" style="text-align:center;">
 																	<tr>
 																		<td class="img" width="50" style="font-size:0pt; line-height:0pt; text-align:left;">
-																			<img src="cid:ico_contact" width="34" height="34" border="0" alt="" />
+																			<img src="{{ ico_contact.src }}" width="34" height="34" border="0" alt="" />
 																		</td>
 																		<td class="text" style="color:#777777; font-family:'Lato', Arial,sans-serif; font-size:16px; line-height:30px; text-align:left;">
 																			<a href="tel:+1234567890" target="_blank" class="link" style="color:#777777; text-decoration:none;">
@@ -345,7 +345,7 @@
 																<table class="center" border="0" cellspacing="0" cellpadding="0" style="text-align:center;">
 																	<tr>
 																		<td class="img" width="50" style="font-size:0pt; line-height:0pt; text-align:left;">
-																			<img src="cid:ico_contact" width="34" height="34" border="0" alt="" />
+																			<img src="{{ ico_contact.src }}" width="34" height="34" border="0" alt="" />
 																		</td>
 																		<td class="text" style="color:#777777; font-family:'Lato', Arial,sans-serif; font-size:16px; line-height:30px; text-align:left;">
 																			<a href="tel:+1234567890" target="_blank" class="link" style="color:#777777; text-decoration:none;">
@@ -364,7 +364,7 @@
 																<table class="center" border="0" cellspacing="0" cellpadding="0" style="text-align:center;">
 																	<tr>
 																		<td class="img" width="50" style="font-size:0pt; line-height:0pt; text-align:left;">
-																			<img src="cid:ico_email" width="34" height="34" border="0" alt="" />
+																			<img src="{{ ico_email.src }}" width="34" height="34" border="0" alt="" />
 																		</td>
 																		<td class="text" style="color:#777777; font-family:'Lato', Arial,sans-serif; font-size:16px; line-height:30px; text-align:left;">
 																			<a href="mail:your@email.com" target="_blank" class="link" style="color:#777777; text-decoration:none;">
@@ -386,7 +386,7 @@
 																<table width="100%" border="0" cellspacing="0" cellpadding="0">
 																	<tr>
 																		<td class="fluid-img" style="border-bottom: 7px solid #ef3050; font-size:0pt; line-height:0pt; text-align:left;">
-																			<img src="cid:image12" width="433" height="225" border="0" alt="" />
+																			<img src="{{ image12.src }}" width="433" height="225" border="0" alt="" />
 																		</td>
 																	</tr>
 																</table>
@@ -434,20 +434,20 @@
 													<table border="0" cellspacing="0" cellpadding="0">
 														<tr>
 															<td class="img" width="55" style="font-size:0pt; line-height:0pt; text-align:left;">
-																<a href="#" target="_blank"><img src="cid:ico_facebook" width="34" height="34" border="0" alt="" />
+																<a href="#" target="_blank"><img src="{{ ico_facebook.src }}" width="34" height="34" border="0" alt="" />
 																</a>
 															</td>
 															<td class="img" width="55" style="font-size:0pt; line-height:0pt; text-align:left;">
-																<a href="#" target="_blank"><img src="cid:ico_instagram" width="34" height="34" border="0" alt="" />
+																<a href="#" target="_blank"><img src="{{ ico_instagram.src }}" width="34" height="34" border="0" alt="" />
 																</a>
 															</td>
 															<td class="img" width="55" style="font-size:0pt; line-height:0pt; text-align:left;">
 																<a href="#" target="_blank">
-																	<img src="cid:ico_linkedin" width="34" height="34" border="0" alt="" />
+																	<img src="{{ ico_linkedin.src }}" width="34" height="34" border="0" alt="" />
 																</a>
 															</td>
 															<td class="img" width="34" style="font-size:0pt; line-height:0pt; text-align:left;"><a href="#" target="_blank">
-																<img src="cid:ico_twitter" width="34" height="34" border="0" alt="" /></a></td>
+																<img src="{{ ico_twitter.src }}" width="34" height="34" border="0" alt="" /></a></td>
 														</tr>
 													</table>
 												</td>

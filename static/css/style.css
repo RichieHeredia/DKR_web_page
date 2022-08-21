@@ -431,14 +431,36 @@ input.error {
   border: 1px solid #c70000; }
 
 .select-list {
-  position: relative;
-  display: inline-block;
   width: 100%;
-  margin-bottom: 47px; }
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid var(#777);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 1.9;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+
+
+}
 
 .list-item {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid var(#777);
+  border-radius: 5px;
+  padding: 0.25em 0.5em;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 1.9;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+
+}
 
 #country {
   z-index: 99; }

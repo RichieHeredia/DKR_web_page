@@ -1,4 +1,9 @@
 {% macro render(field) %}
+
+<!--
+<link rel="stylesheet" href="static/css/style.css">
+-->
+
 <div class="row cont-row">
     <div  class="col-sm-3">
       <label for="{{ field.name }}">{{ field.label.text }}</label><span>:</span>
@@ -45,11 +50,11 @@
     <label for="{{ field.name }}">{{ field.label.text }}</label>
     <div class="select-list">
       {{field(class_ = 'list-item', **kwargs)|safe}}
-      <ul>
+      <option>
         {% for error in field.errors %}
           <li style="color:red;"> {{ error }} </li>
         {% endfor %}
-      </ul>
+      </option>
     </div>
 </div>
 {% endmacro %}

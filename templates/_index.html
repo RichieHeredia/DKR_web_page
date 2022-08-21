@@ -22,19 +22,19 @@
                     <form method="POST" class="signup-form" >
                       {{ form.csrf_token }}
                         <div class="form-row">
-                            {{ render_field(form.name) }}
-                            {{ render_field(form.apellidos) }}
+                            {{ render_field(form.name, placeholder = 'Ingresa tu Nombre') }}
+                            {{ render_field(form.apellidos, placeholder = 'Ingresa tus Apellidos') }}
                         </div>
                         <div>
                           {{ render_radio_field(form.radio)}}
                         </div>
                         <div class="form-row">
-                          {{ render_field(form.kind_id, placeholder = 'CC') }}
-                          {{ render_field(form.cedula) }}
+                          {{ render_field(form.kind_id, placeholder = 'Tipo de documento (CC)') }}
+                          {{ render_field(form.cedula, placeholder = 'Tu numero de Cedula') }}
                         </div>
                         <div class="form-row">
                           {{ render_field(form.birthdate, placeholder="MM-DD-YYYY") }}
-                          {{ render_field(form.phone) }}
+                          {{ render_field(form.phone, placeholder = 'Tu numero de Celular') }}
                         </div>
                         <div class="form-text">
                             <a href="#" class="add-info-link"><i class="zmdi zmdi-chevron-right"></i>Información complementaria</a>
@@ -44,11 +44,11 @@
                           {{ render_field_select(form.pais)}}
                           {{ render_field_select(form.City)}}
                         </div>
-                        {{ render_field(form.Adress_city) }}
+                        {{ render_field(form.Adress_city, placeholder = 'Carrera 1 # 2 3') }}
                         <div class="form-text">
                             <a href="#" class="add-info-link"><i class="zmdi zmdi-chevron-right"></i>Información del la cuenta</a>
                         </div>
-                          {{ render_field(form.placename) }}
+                          {{ render_field(form.placename, placeholder = 'Nombre de tu Académia') }}
                           <div class="form-row">
                             {{ render_field_select(form.Membership_kind)}}
                             {{ render_field(form.Date_start, placeholder="MM-DD-YYYY") }}
@@ -74,8 +74,8 @@
                           </div>
 
                         <div class="form-row">
-                          {{ render_field(form.password) }}
-                          {{ render_field(form.password_2) }}
+                          {{ render_field(form.password, placeholder="Tu Contraseña") }}
+                          {{ render_field(form.password_2, placeholder="Repite tu contraseña") }}
 
                         </div>
                         {{ render_ckeck_field(form.condiciones) }}

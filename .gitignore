@@ -1,0 +1,52 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# WebStorm
+*.iml
+
+# --- FLASK ---
+.DS_Store
+.env
+.flaskenv
+*.pyc
+*.pyo
+env/
+venv/
+.venv/
+env*
+dist/
+build/
+*.egg
+*.egg-info/
+.tox/
+.cache/
+.pytest_cache/
+.idea/
+docs/_build/
+.vscode
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+*,cover
+
+
+
+# --- Git Compile ---
+__pycache__/
+/__pycache__/
+*/__pycache__/
+*/__pycache__/*
+
+*.LIC
+*/build*
+
+.pyc
+*.**.pyc
+*.*.pyc
+**.pyc
+*.pyc
+*.exe

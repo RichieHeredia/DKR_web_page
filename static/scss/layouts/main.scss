@@ -24,7 +24,7 @@
 .signup-form::-webkit-scrollbar-thumb {
     @include border-radius(5px);
     background-color: rgb(235, 235, 235);
-    
+
 }
 label, input {
     display: block;
@@ -69,7 +69,7 @@ input {
 }
 .form-radio {
     margin-bottom: 40px;
-    
+
     input {
         @include hideInput;
     }
@@ -79,19 +79,19 @@ input {
         width: 94px;
         height: 50px;
         box-sizing: border-box;
-        position: relative; 
+        position: relative;
         display: inline-block;
         // width: auto;
         text-align: center;
         border: 1px solid $border-color;
         background-color: #FFF;
-        font-size: 14px; 
-        font-weight: 600; 
+        font-size: 14px;
+        font-weight: 600;
         color: #888;
         text-align: center;
         text-transform: none;
-		transition: 	border-color .15s ease-out, 
-					color .25s ease-out, 
+		transition: 	border-color .15s ease-out,
+					color .25s ease-out,
 					background-color .15s ease-out,
                     box-shadow .15s ease-out;
         @include border-radius(5px);
@@ -115,11 +115,11 @@ input {
     @extend display-flex;
     input + label {
         &:first-of-type {
-            @include border-radius(5px 0 0 5px); 
+            @include border-radius(5px 0 0 5px);
             border-right: none;
         }
-        &:last-of-type { 
-            @include border-radius(0 5px 5px 0);  
+        &:last-of-type {
+            @include border-radius(0 5px 5px 0);
             border-left: none;
         }
     }
@@ -168,31 +168,31 @@ input {
     display: none;
 }
 
-ul { 
+ul {
     @extend list-type-ulli;
     background: 0 0;
     position: relative;
     z-index: 9;
     // border-bottom: 1px solid #999;
 }
-ul li { 
-    padding: 5px 0px; 
+ul li {
+    padding: 5px 0px;
     z-index: 2;
     color: #222;
     font-size: 14px;
     font-weight: 900;
 }
-ul li:not(.init) { 
-    display: none; 
+ul li:not(.init) {
+    display: none;
     background: #fff;
     color: $black-color;
-    padding: 5px 10px; 
+    padding: 5px 10px;
 }
-ul li:not(.init):hover, ul li.selected:not(.init) { 
+ul li:not(.init):hover, ul li.selected:not(.init) {
     background: $blue-color;
     color: #fff;
 }
-li.init { 
+li.init {
     cursor: pointer;
     position: relative;
     border: 1px solid $border-color;
@@ -248,10 +248,38 @@ input.error {
     display: inline-block;
     width: 100%;
     margin-bottom: 47px;
+
+  // A reset of styles, including removing the default dropdown arrow
+
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid var(#777);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+
 }
 .list-item {
     position: absolute;
     width: 100%;
+
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(#777);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+
 }
 #country {
     z-index: 99;

@@ -1,0 +1,22 @@
+.fab {
+padding: 20px;
+font-size: 30px;
+width: 30px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+border-radius: 50%;
+}
+
+.fab:hover {
+opacity: 0.7;
+}
+
+.fa-whatsapp {
+background: #45bbff;
+color: white;
+}
+
+/* <a href="https://wa.me/34555005500/?text=tu%20texto%20personalizado" target="_blank">
+    <img src="logo.png" width="50" height="50">
+ </a> */
