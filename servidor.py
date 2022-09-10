@@ -168,6 +168,9 @@ def Inscripcion():
 def Blog():
     return render_template('blog.html')
 
+@app.route('/terms_conditions')
+def Terms_Conditions():
+    return render_template('politics.html')
 
 class Info_form(FlaskForm):
     name = StringField('Nombre', validators=[InputRequired('A name is required!')])
