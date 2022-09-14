@@ -184,6 +184,7 @@ def Contact():
     if form_cli.validate_on_submit():
         data =  form_cli.data
         send_mail(data)
+        write_database_csv(data)
         return render_template('index_.html')
     return render_template('contact_us.html', form = form_cli)
 
@@ -215,7 +216,6 @@ def send_mail(data,
               password='pxfmffaylisptntc',
               use_tls=True):
 
-    curr_path = os.path.dirname(os.path.abspath(__file__))
     ruta_template = '/home/serviciosdkr/DKR_web_page/classy2.html'
 
     msg = MIMEMultipart()
@@ -225,9 +225,9 @@ def send_mail(data,
     msg['Subject'] = subject
 
     # Record the MIME types of both parts - text/plain and text/html.
-    html_ = Template(Path(ruta_template).read_text(encoding='Utf-8',))
+    html_ = Template(Path(ruta_template).read_text(encoding='Utf-8'))
     html_fin  = html_.substitute({'USUARIO': data['name'],
-                                  'TELEFONO':data['phone'],
+                                  'TELEFONO': '******' + str(data['phone'])[-4:],
                                   'MENSAJE':data['message']})
 
     part3 = MIMEText(html_fin, 'html')
@@ -286,15 +286,13 @@ def send_mail(data,
 
 
 def write_database_csv(data):
-    with open('database2.csv', mode='a',newline = '') as database2:
-        nombre = data["nombre"]
+    with open('database_contactanos.csv', mode='a',newline = '') as database2:
+        nombre = data["name"]
         email = data["email"]
-        telefono = data["telefono"]
-        ciudad = data["ciudad"]
-        ocupacion = data["ocupacion"]
-        quien = data["quien"]
+        telefono = data["phone"]
+        mensaje = data["message"]
         csv_writer = csv.writer(database2, delimiter = ',',quotechar="'", quoting= csv.QUOTE_MINIMAL)
-        csv_writer.writerow([nombre,email,telefono,ciudad,ocupacion,quien])
+        csv_writer.writerow([nombre,email,telefono,mensaje])
 
 
 
