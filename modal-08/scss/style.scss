@@ -1,0 +1,241 @@
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+
+$font-primary: 'Poppins',Arial, sans-serif;
+
+$primary: #fb8691;
+
+@mixin gradient-background(){
+	background: rgba(145,94,255,1);
+	background: -moz-linear-gradient(45deg, rgba(145,94,255,1) 0%, rgba(255,142,89,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(145,94,255,1)), color-stop(100%, rgba(255,142,89,1)));
+	background: -webkit-linear-gradient(45deg, rgba(145,94,255,1) 0%, rgba(255,142,89,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(145,94,255,1) 0%, rgba(255,142,89,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(145,94,255,1) 0%, rgba(255,142,89,1) 100%);
+	background: linear-gradient(45deg, rgba(145,94,255,1) 0%, rgba(255,142,89,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#915eff', endColorstr='#ff8e59', GradientType=1 );
+}
+
+body{
+	font-family: $font-primary;
+	font-size: 15px;
+	line-height: 1.8;
+	font-weight: normal;
+}
+a {
+	transition: .3s all ease;
+	color: $primary;
+	&:hover, &:focus {
+		text-decoration: none !important;
+		outline: none !important;
+		box-shadow: none;
+	}
+}
+button {
+	transition: .3s all ease;
+	&:hover, &:focus {
+		text-decoration: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+	}
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+	line-height: 1.5;
+	font-weight: 400;
+	font-family: $font-primary;
+}
+
+
+//COVER BG
+.img,
+.blog-img,
+.user-img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.ftco-footer-social {
+	li {
+		list-style: none;
+		margin: 0 10px 0 0;
+		display: inline-block;
+		a {
+			height: 40px;
+			width: 40px;
+			display: block;
+			background: rgba($black, .05);
+			border-radius: 50%;
+			position: relative;
+			span {
+				position: absolute;
+				font-size: 20px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}
+
+
+//FORM CONTROL
+.form-control {
+	height: 52px;
+	background: $white;
+	color: $black;
+	font-size: 16px;
+	border-radius: 5px;
+	box-shadow: none;
+	border: 1px solid rgba(0,0,0,.1);
+	&:focus, &:active {
+		outline: none !important;
+		box-shadow: none;
+		border: 1px solid $primary;
+	}
+}
+textarea.form-control {
+	height: inherit!important;
+}
+
+//BUTTON
+.btn {
+	cursor: pointer;
+	@include border-radius(40px);
+	box-shadow: none!important;
+	font-size: 15px;
+	&:hover, &:active, &:focus {
+		outline: none;
+	}
+	&.btn-primary {
+		background: $primary !important;
+		border: 1px solid $primary !important;
+		color: $white !important;
+		&:hover {
+			border: 1px solid $primary;
+			background: transparent;
+			color :$primary;
+		}
+		&.btn-outline-primary {
+			border: 1px solid $primary;
+			background: transparent;
+			color :$primary;
+			&:hover {
+				border: 1px solid transparent;
+				background: $primary;
+				color :$white;
+			}
+		}
+	}
+}
+
+
+.ftco-section{
+	background: $white;
+	h2{
+		margin-bottom: 0;
+	}
+}
+
+//MODAL 01
+.modal-dialog{
+	max-width: 600px;
+}
+.modal-content{
+	overflow: hidden;
+	border: none;
+	position: relative;
+	padding: 0 !important;
+	-webkit-box-shadow: 0px 10px 34px -15px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0px 10px 34px -15px rgba(0,0,0,0.24);
+	box-shadow: 0px 10px 34px -15px rgba(0,0,0,0.24);
+	.modal-header{
+		position: relative;
+		padding: 0;
+		border: none;
+		height: 230px;
+		@include gradient-background();
+	}
+	button.close{
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0;
+		margin: 0;
+		width: 40px;
+		height: 40px;
+		z-index: 1;
+		color: $white;
+	}
+	.modal-body{
+		border: none;
+		overflow: hidden;
+		margin-top: -180px;
+		z-index: 2;
+		.icon{
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			font-size: 30px;
+			margin: 0 auto;
+			margin-bottom: 10px;
+		}
+		h2{
+			font-weight: 700;
+			color: $white;
+		}
+		h4{
+			font-size: 18px;
+		}
+		h3{
+			font-weight: 800;
+			font-size: 22px;
+			span{
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+.ftco-degree-bg{
+	position: relative;
+	&:after{
+		content: '';
+	  position: absolute;
+	  right: 0;
+	  bottom: -30px;
+		overflow: visible;
+		width: 50%;
+		height: 60px;
+		z-index: 1;
+		-webkit-transform: skewY(-10deg);
+		-moz-transform: skewY(-10deg);
+		-ms-transform: skewY(-10deg);
+		-o-transform: skewY(-10deg);
+		transform: skewY(-10deg);
+		background-color: $white;
+	}
+	&:before{
+		content: '';
+	  position: absolute;
+	  left: 0;
+	  bottom: -30px;
+		overflow: visible;
+		width: 50%;
+		height: 60px;
+		z-index: 1;
+		-webkit-transform: skewY(10deg);
+		-moz-transform: skewY(10deg);
+		-ms-transform: skewY(10deg);
+		-o-transform: skewY(10deg);
+		transform: skewY(10deg);
+		background-color: $white;
+
+	}
+}
+

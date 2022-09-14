@@ -172,6 +172,10 @@ def Blog():
 def Terms_Conditions():
     return render_template('politics.html')
 
+@app.route('/modal')
+def Modal():
+    return render_template('modal_index.html')
+
 class Info_form(FlaskForm):
     name = StringField('Nombre', validators=[InputRequired('A name is required!')])
     email = StringField('Email', validators=[InputRequired('A Correo is required!')])
