@@ -57,7 +57,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #0B8FE5; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -417,7 +417,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color: #0B8FE5;
   word-break: break-word; }
   a > code {
     color: inherit; }
@@ -1911,7 +1911,7 @@ textarea.form-control {
   display: block; }
 
 .was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label {
-  color: #dc3545; }
+  color: #0B8FE5; }
 
 .was-validated .form-check-input:invalid ~ .invalid-feedback,
 .was-validated .form-check-input:invalid ~ .invalid-tooltip, .form-check-input.is-invalid ~ .invalid-feedback,
@@ -1919,9 +1919,9 @@ textarea.form-control {
   display: block; }
 
 .was-validated .custom-control-input:invalid ~ .custom-control-label, .custom-control-input.is-invalid ~ .custom-control-label {
-  color: #dc3545; }
+  color: #0B8FE5; }
   .was-validated .custom-control-input:invalid ~ .custom-control-label::before, .custom-control-input.is-invalid ~ .custom-control-label::before {
-    border-color: #dc3545; }
+    border-color: #0B8FE5; }
 
 .was-validated .custom-control-input:invalid ~ .invalid-feedback,
 .was-validated .custom-control-input:invalid ~ .invalid-tooltip, .custom-control-input.is-invalid ~ .invalid-feedback,
@@ -1929,18 +1929,18 @@ textarea.form-control {
   display: block; }
 
 .was-validated .custom-control-input:invalid:checked ~ .custom-control-label::before, .custom-control-input.is-invalid:checked ~ .custom-control-label::before {
-  border-color: #e4606d;
-  background-color: #e4606d; }
+  border-color: #0B8FE5;
+  background-color: #0B8FE5; }
 
 .was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before, .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
 
 .was-validated .custom-control-input:invalid:focus:not(:checked) ~ .custom-control-label::before, .custom-control-input.is-invalid:focus:not(:checked) ~ .custom-control-label::before {
-  border-color: #dc3545; }
+  border-color: #0B8FE5; }
 
 .was-validated .custom-file-input:invalid ~ .custom-file-label, .custom-file-input.is-invalid ~ .custom-file-label {
-  border-color: #dc3545; }
+  border-color: #0B8FE5; }
 
 .was-validated .custom-file-input:invalid ~ .invalid-feedback,
 .was-validated .custom-file-input:invalid ~ .invalid-tooltip, .custom-file-input.is-invalid ~ .invalid-feedback,
@@ -1948,7 +1948,7 @@ textarea.form-control {
   display: block; }
 
 .was-validated .custom-file-input:invalid:focus ~ .custom-file-label, .custom-file-input.is-invalid:focus ~ .custom-file-label {
-  border-color: #dc3545;
+  border-color: #0B8FE5;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
 
@@ -8258,14 +8258,14 @@ textarea.form-control {
     padding: 0;
     border: none;
     height: 230px;
-    background: #915eff;
-    background: -moz-linear-gradient(45deg, #915eff 0%, #ff8e59 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, #915eff), color-stop(100%, #ff8e59));
-    background: -webkit-linear-gradient(45deg, #915eff 0%, #ff8e59 100%);
-    background: -o-linear-gradient(45deg, #915eff 0%, #ff8e59 100%);
-    background: -ms-linear-gradient(45deg, #915eff 0%, #ff8e59 100%);
-    background: linear-gradient(45deg, #915eff 0%, #ff8e59 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#915eff', endColorstr='#ff8e59', GradientType=1 ); }
+    background: #0918F7;
+    background: -moz-linear-gradient(45deg, #0918F7 0%, #09BAF7 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #0918F7), color-stop(100%, #09BAF7));
+    background: -webkit-linear-gradient(45deg, #0918F7 0%, #09BAF7 100%);
+    background: -o-linear-gradient(45deg, #0918F7 0%, #09BAF7 100%);
+    background: -ms-linear-gradient(45deg, #0918F7 0%, #09BAF7 100%);
+    background: linear-gradient(45deg, #0918F7 0%, #09BAF7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0918F7', endColorstr='#09BAF7', GradientType=1 ); }
   .modal-content button.close {
     position: absolute;
     top: 0;

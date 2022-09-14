@@ -74,7 +74,7 @@
 {% macro render_ckeck_field(field) %}
 <div class="form-group">
     {{field(class_ = 'submit',  **kwargs)|safe}}
-    Acepta <a href="https://minciencias.gov.co/sites/default/files/manual_politicas_de_seguridad_de_la_informacion_v01_1.pdf"> terminos y condiciones ?</a>
+    Acepta <a href="/terms_conditions" style="color:blue;"> terminos y condiciones ?</a>
     <ul>
       {% for error in field.errors %}
         <li style="color:red;"> {{ error }} </li>

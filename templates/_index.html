@@ -23,7 +23,7 @@
             <!-- <img src="images/signup-bg.jpg" alt=""> -->
             <div class="container">
                 <div class="signup-content">
-                    <form method="POST" class="signup-form" data-toggle="modal" data-target="#exampleModalCenter">
+                    <form method="POST" class="signup-form" >
                       {{ form.csrf_token }}
                         <div class="form-row">
                             {{ render_field(form.name, placeholder = 'Ingresa tu Nombre') }}
@@ -41,7 +41,7 @@
                           {{ render_field(form.phone, placeholder = 'Tu numero de Celular') }}
                         </div>
                         <div class="form-text">
-                            <a href="#" class="add-info-link"><i class="zmdi zmdi-chevron-right"></i>Información complementaria</a>
+                            <a href="#" class="add-info-link" ><i class="zmdi zmdi-chevron-right" ></i>Información complementaria</a>
                         </div>
                           {{ render_field(form.email) }}
                         <div class="form-row">
@@ -86,7 +86,7 @@
 
 
                       <div class="form-group">
-                          <input type="submit" name="submit" id="submit" class="form-submit" value="Submit" ></input>
+                          <input type="submit" name="submit" id="submit" class="form-submit" value="Submit" data-toggle="modal" data-target="#exampleModalCenter" ></input>
                       </div>
 
                       <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -102,8 +102,7 @@
                               <div class="icon d-flex align-items-center justify-content-center">
                                 <img src="static/modal/images/email.svg" alt="" class="img-fluid">
                               </div>
-                              <h4 class="mb-2">We sent confirmation link to:</h4>
-                              <h3>johndoe<span>@</span>gmail.com</h3>
+                              <h4 class="mb-2">We sent confirmation link to your email:</h4>
                   
                             </div>
                           </div>
